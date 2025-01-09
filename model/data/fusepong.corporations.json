@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "677f4e884425e4f10eb34a68"
+  },
+  "idEmpresa": 1,
+  "nombre": "Empresa Uno",
+  "nit": "123456789",
+  "telefono": "123-456-7890",
+  "direccion": "Calle 1, Ciudad A",
+  "correo": "contacto@empresa1.com"
+},
+{
+  "_id": {
+    "$oid": "677f4e884425e4f10eb34a69"
+  },
+  "idEmpresa": 2,
+  "nombre": "Empresa Dos",
+  "nit": "987654321",
+  "telefono": "987-654-3210",
+  "direccion": "Calle 2, Ciudad B",
+  "correo": "contacto@empresa2.com"
+},
+{
+  "_id": {
+    "$oid": "677f4e884425e4f10eb34a6a"
+  },
+  "idEmpresa": 3,
+  "nombre": "Empresa Tres",
+  "nit": "1122334455",
+  "telefono": "111-222-3333",
+  "direccion": "Calle 3, Ciudad C",
+  "correo": "contacto@empresa3.com"
+}]

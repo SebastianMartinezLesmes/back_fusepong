@@ -1,16 +1,18 @@
 ## Creación de Proyecto
 
-1. **Crear un entorno virtual**
+### 1. Crear un Entorno Virtual
+
+Para crear un entorno virtual, ejecuta el siguiente comando:
 
 ```prompt
-python -m venv <nombre_del_entorno>
+python -m venv .venv
 ```
 
 2. **Activar el entorno virtual**
 
 En Windows:
-```bash
-nombre_del_entorno\Scripts\activate
+```prompt
+venv\Scripts\activate
 ```
 
 En Linux/Mac:
@@ -20,7 +22,7 @@ source nombre_del_entorno/bin/activate
 
 3. **Instalar dependencias**
 
-```bash
+```prompt
 pip install -r requirements.txt
 ```
 
@@ -30,8 +32,16 @@ pip install fastapi
 pip install uvicorn
 pip install pymongo
 ```
-
-Ejecutar tu aplicación FastAPI: Supongamos que el archivo se llama main.py. Usa:
+4. **Ejecutar tu aplicación FastAPI (Sin Cache)**
 ```
 set PYTHONDONTWRITEBYTECODE=1 && uvicorn main:app --reload
 ```
+
+5. **Acceso a la Aplicación**
+
+- En el servidor local:
+Para acceder a la aplicación en tu servidor local, abre [http://localhost:8000](http://localhost:8000) en tu navegador
+
+### Documentación de la API:
+La documentación interactiva de la API está disponible en [http://localhost:8000/docs](http://localhost:8000/docs)
+

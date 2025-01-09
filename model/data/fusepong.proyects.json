@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "677f4e9e4425e4f10eb34a6d"
+  },
+  "idProyecto": 1,
+  "titulo": "Proyecto A",
+  "empresaFK": 1
+},
+{
+  "_id": {
+    "$oid": "677f4e9e4425e4f10eb34a6e"
+  },
+  "idProyecto": 2,
+  "titulo": "Proyecto B",
+  "empresaFK": 2
+},
+{
+  "_id": {
+    "$oid": "677f4e9e4425e4f10eb34a6f"
+  },
+  "idProyecto": 3,
+  "titulo": "Proyecto C",
+  "empresaFK": 3
+},
+{
+  "_id": {
+    "$oid": "677f4e9e4425e4f10eb34a70"
+  },
+  "idProyecto": 4,
+  "titulo": "Proyecto D",
+  "empresaFK": 3
+}]
