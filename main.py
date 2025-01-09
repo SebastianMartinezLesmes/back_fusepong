@@ -11,39 +11,39 @@ db = client["fusepong"]
 
 # Routes
 ## GET
-@app.get("/corporations/", response_model=List[Empresa])
+@app.get("/corporations", response_model=List[Empresa])
 def get_empresas():
     return list(db.corporations.find({}, {"_id": 0}))
 
-@app.get("/proyects/", response_model=List[Proyecto])
+@app.get("/proyects", response_model=List[Proyecto])
 def get_proyectos():
     return list(db.proyects.find({}, {"_id": 0}))
 
-@app.get("/tickets/", response_model=List[Ticket])
+@app.get("/tickets", response_model=List[Ticket])
 def get_tickets():
     return list(db.tickets.find({}, {"_id": 0}))
 
-@app.get("/users/", response_model=List[Usuario])
+@app.get("/users", response_model=List[Usuario])
 def get_usuarios():
     return list(db.users.find({}, {"_id": 0}))
 
 ## POST
-@app.post("/createCorporations/", response_model=Empresa)
+@app.post("/createCorporations", response_model=Empresa)
 def create_empresa(empresa: Empresa):
     db.corporations.insert_one(empresa.dict())
     return empresa
 
-@app.post("/createProyects/", response_model=Proyecto)
+@app.post("/createProyects", response_model=Proyecto)
 def create_proyecto(proyecto: Proyecto):
     db.proyects.insert_one(proyecto.dict())
     return proyecto
 
-@app.post("/createTickets/", response_model=Ticket)
+@app.post("/createTickets", response_model=Ticket)
 def create_ticket(ticket: Ticket):
     db.tickets.insert_one(ticket.dict())
     return ticket
 
-@app.post("/createUsers/", response_model=Usuario)
+@app.post("/createUsers", response_model=Usuario)
 def create_usuario(usuario: Usuario):
     db.users.insert_one(usuario.dict())
     return usuario
