@@ -44,3 +44,17 @@ Para acceder a la aplicación en tu servidor local, abre [http://localhost:8000]
 
 - Documentación interactiva de la API está disponible en [http://localhost:8000/docs](http://localhost:8000/docs)
 
+6. **Estructura**
+
+project/
+│
+├── main.py            # Archivo principal, inicia la aplicación
+├── routes/
+│   ├── __init__.py    # Indica que es un paquete Python
+│   └── endpoints.py   # Contiene las rutas/endpoints
+├── config/
+│   ├── __init__.py    # Indica que es un paquete Python
+│   └── cors.py        # Configuración del middleware de CORS
+└── model/
+    ├── __init__.py    # Indica que es un paquete Python
+    └── model.py       # Modelos de Pydantic
