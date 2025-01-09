@@ -1,0 +1,132 @@
+[{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a81"
+  },
+  "idUser": 1,
+  "nombre": "Usuario Uno",
+  "correo": "usuario1@correo.com",
+  "contrasena": "password1",
+  "ticketFK": 1,
+  "empresaFK": 1
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a82"
+  },
+  "idUser": 2,
+  "nombre": "Usuario Dos",
+  "correo": "usuario2@correo.com",
+  "contrasena": "password2",
+  "ticketFK": 2,
+  "empresaFK": 1
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a83"
+  },
+  "idUser": 3,
+  "nombre": "Usuario Tres",
+  "correo": "usuario3@correo.com",
+  "contrasena": "password3",
+  "ticketFK": 3,
+  "empresaFK": 1
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a84"
+  },
+  "idUser": 4,
+  "nombre": "Usuario Cuatro",
+  "correo": "usuario4@correo.com",
+  "contrasena": "password4",
+  "ticketFK": 4,
+  "empresaFK": 2
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a85"
+  },
+  "idUser": 5,
+  "nombre": "Usuario Cinco",
+  "correo": "usuario5@correo.com",
+  "contrasena": "password5",
+  "ticketFK": 5,
+  "empresaFK": 2
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a86"
+  },
+  "idUser": 6,
+  "nombre": "Usuario Seis",
+  "correo": "usuario6@correo.com",
+  "contrasena": "password6",
+  "ticketFK": 6,
+  "empresaFK": 2
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a87"
+  },
+  "idUser": 7,
+  "nombre": "Usuario Siete",
+  "correo": "usuario7@correo.com",
+  "contrasena": "password7",
+  "ticketFK": 7,
+  "empresaFK": 3
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a88"
+  },
+  "idUser": 8,
+  "nombre": "Usuario Ocho",
+  "correo": "usuario8@correo.com",
+  "contrasena": "password8",
+  "ticketFK": 8,
+  "empresaFK": 3
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a89"
+  },
+  "idUser": 9,
+  "nombre": "Usuario Nueve",
+  "correo": "usuario9@correo.com",
+  "contrasena": "password9",
+  "ticketFK": 9,
+  "empresaFK": 3
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a8a"
+  },
+  "idUser": 10,
+  "nombre": "Usuario Diez",
+  "correo": "usuario10@correo.com",
+  "contrasena": "password10",
+  "ticketFK": 10,
+  "empresaFK": 3
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a8b"
+  },
+  "idUser": 11,
+  "nombre": "Usuario Once",
+  "correo": "usuario11@correo.com",
+  "contrasena": "password11",
+  "ticketFK": 11,
+  "empresaFK": 3
+},
+{
+  "_id": {
+    "$oid": "677f4ed64425e4f10eb34a8c"
+  },
+  "idUser": 12,
+  "nombre": "Usuario Doce",
+  "correo": "usuario12@correo.com",
+  "contrasena": "password12",
+  "ticketFK": 12,
+  "empresaFK": 3
+}]

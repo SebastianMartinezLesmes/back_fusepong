@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a73"
+  },
+  "idTicket": 1,
+  "desc": "Subtarea 1",
+  "comentarios": [],
+  "estado": "Activo",
+  "proyectoFK": 1
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a74"
+  },
+  "idTicket": 2,
+  "desc": "Subtarea 2",
+  "comentarios": [],
+  "estado": "En proceso",
+  "proyectoFK": 1
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a75"
+  },
+  "idTicket": 3,
+  "desc": "Subtarea 3",
+  "comentarios": [],
+  "estado": "Finalizado",
+  "proyectoFK": 1
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a76"
+  },
+  "idTicket": 4,
+  "desc": "Subtarea 1",
+  "comentarios": [],
+  "estado": "Activo",
+  "proyectoFK": 2
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a77"
+  },
+  "idTicket": 5,
+  "desc": "Subtarea 2",
+  "comentarios": [],
+  "estado": "En proceso",
+  "proyectoFK": 2
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a78"
+  },
+  "idTicket": 6,
+  "desc": "Subtarea 3",
+  "comentarios": [],
+  "estado": "Finalizado",
+  "proyectoFK": 2
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a79"
+  },
+  "idTicket": 7,
+  "desc": "Subtarea 1",
+  "comentarios": [],
+  "estado": "Activo",
+  "proyectoFK": 3
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a7a"
+  },
+  "idTicket": 8,
+  "desc": "Subtarea 2",
+  "comentarios": [],
+  "estado": "En proceso",
+  "proyectoFK": 3
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a7b"
+  },
+  "idTicket": 9,
+  "desc": "Subtarea 3",
+  "comentarios": [],
+  "estado": "Finalizado",
+  "proyectoFK": 3
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a7c"
+  },
+  "idTicket": 10,
+  "desc": "Subtarea 1",
+  "comentarios": [],
+  "estado": "Activo",
+  "proyectoFK": 4
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a7d"
+  },
+  "idTicket": 11,
+  "desc": "Subtarea 2",
+  "comentarios": [],
+  "estado": "En proceso",
+  "proyectoFK": 4
+},
+{
+  "_id": {
+    "$oid": "677f4ebe4425e4f10eb34a7e"
+  },
+  "idTicket": 12,
+  "desc": "Subtarea 3",
+  "comentarios": [],
+  "estado": "Finalizado",
+  "proyectoFK": 4
+}]
