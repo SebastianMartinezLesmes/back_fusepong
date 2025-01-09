@@ -28,6 +28,7 @@ Instalar dependencias: Usa pip dentro del entorno virtual:
 ```
 pip install fastapi 
 pip install uvicorn
+pip install pymongo
 ```
 
 Ejecutar tu aplicación FastAPI: Supongamos que el archivo se llama main.py. Usa:
