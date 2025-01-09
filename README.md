@@ -42,6 +42,5 @@ set PYTHONDONTWRITEBYTECODE=1 && uvicorn main:app --reload
 - En el servidor local:
 Para acceder a la aplicación en tu servidor local, abre [http://localhost:8000](http://localhost:8000) en tu navegador
 
-### Documentación de la API:
-La documentación interactiva de la API está disponible en [http://localhost:8000/docs](http://localhost:8000/docs)
+- Documentación interactiva de la API está disponible en [http://localhost:8000/docs](http://localhost:8000/docs)
 
