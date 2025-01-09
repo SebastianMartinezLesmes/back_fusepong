@@ -24,11 +24,10 @@ class Ticket(BaseModel):
     comentarios: List[Comentario]
     estado: str
     proyectoFK: int
+    usuarioFK: int
 
 class Usuario(BaseModel):
     idUser: int
     nombre: str
     correo: str
     contrasena: str
-    ticketFK: int
-    empresaFK: int
