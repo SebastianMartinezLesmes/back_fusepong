@@ -20,6 +20,12 @@ class Comentario(BaseModel):
     
 class ComentarioRequest(BaseModel):
     comentario: str
+    
+class EstadoRequest(BaseModel):
+    estado: str
+    
+class DescripcionRequest(BaseModel):
+    desc: str
 
 class Ticket(BaseModel):
     idTicket: int

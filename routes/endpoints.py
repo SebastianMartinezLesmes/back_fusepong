@@ -1,7 +1,7 @@
 from fastapi import FastAPI, APIRouter, HTTPException
 from typing import List
 from pymongo import MongoClient
-from model.model import Empresa, Proyecto, Ticket, Usuario, ComentarioRequest
+from model.model import Empresa, Proyecto, Ticket, Usuario, ComentarioRequest, EstadoRequest, DescripcionRequest
 
 router = APIRouter()
 app = FastAPI()
@@ -51,46 +51,38 @@ def create_usuario(usuario: Usuario):
 @router.post("/ticketsComents/{id_ticket}/comentarios", response_model=Ticket)
 def add_comentario(id_ticket: int, comentario_data: ComentarioRequest):
     ticket = db.tickets.find_one({"idTicket": id_ticket})
-    
     if not ticket:
         raise HTTPException(status_code=404, detail="Ticket no encontrado")
-    
     nuevo_comentario = {
-        "idComent": len(ticket['comentarios']) + 1,  # Generar ID único
+        "idComent": len(ticket['comentarios']) + 1,  
         "comentario": comentario_data.comentario
     }
-    
     db.tickets.update_one({"idTicket": id_ticket}, {"$push": {"comentarios": nuevo_comentario}})
-
     return db.tickets.find_one({"idTicket": id_ticket}, {"_id": 0})
 
 ## PUT
 @router.put("/ticketsState/{id_ticket}", response_model=Ticket)
-def update_ticket_estado(id_ticket: int, estado: str):
+def update_ticket_estado(id_ticket: int, estado_request: EstadoRequest):
     ticket = db.tickets.find_one({"idTicket": id_ticket})
-    
     if ticket is None:
         raise HTTPException(status_code=404, detail="Ticket no encontrado")
-    
+    estado = estado_request.estado
     db.tickets.update_one(
         {"idTicket": id_ticket},
         {"$set": {"estado": estado}}
     )
-    
     updated_ticket = db.tickets.find_one({"idTicket": id_ticket}, {"_id": 0})
     return updated_ticket
 
 @router.put("/ticketsDesc/{id_ticket}", response_model=Ticket)
-def update_ticket_desc(id_ticket: int, desc: str):
+def update_ticket_desc(id_ticket: int, descripcion_request: DescripcionRequest):
     ticket = db.tickets.find_one({"idTicket": id_ticket})
-    
     if ticket is None:
         raise HTTPException(status_code=404, detail="Ticket no encontrado")
-    
+    desc = descripcion_request.desc
     db.tickets.update_one(
         {"idTicket": id_ticket},
         {"$set": {"desc": desc}}
     )
-    
     updated_ticket = db.tickets.find_one({"idTicket": id_ticket}, {"_id": 0})
     return updated_ticket
