@@ -12,7 +12,7 @@ python -m venv .venv
 
 En Windows:
 ```prompt
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 En Linux/Mac:
