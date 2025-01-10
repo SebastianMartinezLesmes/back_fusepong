@@ -17,6 +17,9 @@ class Proyecto(BaseModel):
 class Comentario(BaseModel):
     idComent: int
     comentario: str
+    
+class ComentarioRequest(BaseModel):
+    comentario: str
 
 class Ticket(BaseModel):
     idTicket: int

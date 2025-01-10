@@ -1,7 +1,7 @@
 from fastapi import FastAPI, APIRouter, HTTPException
 from typing import List
 from pymongo import MongoClient
-from model.model import Empresa, Proyecto, Ticket, Usuario
+from model.model import Empresa, Proyecto, Ticket, Usuario, ComentarioRequest
 
 router = APIRouter()
 app = FastAPI()
@@ -49,22 +49,20 @@ def create_usuario(usuario: Usuario):
     return usuario
 
 @router.post("/ticketsComents/{id_ticket}/comentarios", response_model=Ticket)
-def add_comentario(id_ticket: int, comentario: str):
+def add_comentario(id_ticket: int, comentario_data: ComentarioRequest):
     ticket = db.tickets.find_one({"idTicket": id_ticket})
     
-    if ticket is None:
+    if not ticket:
         raise HTTPException(status_code=404, detail="Ticket no encontrado")
     
-    id_coment = len(ticket['comentarios']) + 1  
-    nuevo_comentario = {"idComent": id_coment, "comentario": comentario}
+    nuevo_comentario = {
+        "idComent": len(ticket['comentarios']) + 1,  # Generar ID único
+        "comentario": comentario_data.comentario
+    }
     
-    db.tickets.update_one(
-        {"idTicket": id_ticket},
-        {"$push": {"comentarios": nuevo_comentario}}
-    )
-    
-    updated_ticket = db.tickets.find_one({"idTicket": id_ticket}, {"_id": 0})
-    return updated_ticket
+    db.tickets.update_one({"idTicket": id_ticket}, {"$push": {"comentarios": nuevo_comentario}})
+
+    return db.tickets.find_one({"idTicket": id_ticket}, {"_id": 0})
 
 ## PUT
 @router.put("/ticketsState/{id_ticket}", response_model=Ticket)
