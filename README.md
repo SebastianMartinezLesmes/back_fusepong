@@ -2,10 +2,10 @@
 Antes de comenzar con la creación del proyecto en FastAPI, asegúrate de cumplir con los siguientes requisitos:
 
 1. **Tener una Base de Datos (MongoDB Compass)**
-  1. Descargar MongoDB Compass en su [Pagina Oficial](https://www.mongodb.com/try/download/compass).
-  2. Instalar MongoDB Compass.
-  3. Iniciar MongoDB Compass.
-  4. Inicia la base de datos en el puerto: mongodb://localhost:27017.
+- 1. Descargar MongoDB Compass en su [Pagina Oficial](https://www.mongodb.com/try/download/compass).
+- 2. Instalar MongoDB Compass.
+- 3. Iniciar MongoDB Compass.
+- 4. Inicia la base de datos en el puerto: mongodb://localhost:27017.
 
 2. **Instalar Python**
 - Descarga e instala Python (versión 3.8 o superior) desde su sitio web oficial: [https://www.python.org/downloads/](https://www.python.org/downloads/)
