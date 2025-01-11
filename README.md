@@ -103,5 +103,5 @@ back_fusepong/
 ├── main.py                       # Punto de entrada principal de la aplicación
 ├── README.md                     # Documentación del proyecto
 
-7. [Front](https://github.com/SebastianMartinezLesmes/front_fusepong)
+7. El repositorio del frontend del proyecto está disponible en el siguiente enlace: [Front](https://github.com/SebastianMartinezLesmes/front_fusepong)
 
