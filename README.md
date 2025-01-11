@@ -1,3 +1,44 @@
+## Pre-requisitos
+Antes de comenzar con la creación del proyecto en FastAPI, asegúrate de cumplir con los siguientes requisitos:
+
+1. **Instalar Python**
+
+- Descarga e instala Python (versión 3.8 o superior) desde su sitio web oficial: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+- Durante la instalación, asegúrate de marcar la casilla "Add Python to PATH" para facilitar el uso de Python desde la terminal.
+Verifica que Python se instaló correctamente ejecutando el siguiente comando en tu terminal o consola:
+```prompt
+python --version
+```
+O
+```prompt
+python -V
+```
+
+2. Instalar pip (Gestor de paquetes de Python)
+
+- En la mayoría de las instalaciones de Python, pip ya viene preinstalado. Verifica su instalación ejecutando:
+```prompt
+pip --version
+```
+O
+```prompt
+pip -V
+```
+
+Si no está instalado, puedes instalarlo siguiendo las instrucciones oficiales: [https://pip.pypa.io/en/stable/installation/](https://pip.pypa.io/en/stable/installation/)
+
+3. **Instalar Git**
+
+- Instala Git para gestionar tu proyecto con control de versiones. Descárgalo desde: [https://git-scm.com/](https://git-scm.com/)
+- Verifica su instalación ejecutando:
+```prompt
+git --version
+```
+O
+```prompt
+git -V
+```
+
 ## Creación de Proyecto
 
 ### 1. Crear un Entorno Virtual
@@ -12,7 +53,7 @@ python -m venv .venv
 
 En Windows:
 ```prompt
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 En Linux/Mac:
@@ -39,9 +80,7 @@ set PYTHONDONTWRITEBYTECODE=1 && uvicorn main:app --reload
 
 5. **Acceso a la Aplicación**
 
-- En el servidor local:
-Para acceder a la aplicación en tu servidor local, abre [http://localhost:8000](http://localhost:8000) en tu navegador
+- En el servidor local: Para acceder a la aplicación en tu servidor local, abre [http://localhost:8000](http://localhost:8000) en tu navegador
 
-### Documentación de la API:
-La documentación interactiva de la API está disponible en [http://localhost:8000/docs](http://localhost:8000/docs)
+- Documentación interactiva de la API está disponible en [http://localhost:8000/docs](http://localhost:8000/docs)
 

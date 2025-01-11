@@ -17,6 +17,15 @@ class Proyecto(BaseModel):
 class Comentario(BaseModel):
     idComent: int
     comentario: str
+    
+class ComentarioRequest(BaseModel):
+    comentario: str
+    
+class EstadoRequest(BaseModel):
+    estado: str
+    
+class DescripcionRequest(BaseModel):
+    desc: str
 
 class Ticket(BaseModel):
     idTicket: int
@@ -24,11 +33,10 @@ class Ticket(BaseModel):
     comentarios: List[Comentario]
     estado: str
     proyectoFK: int
+    usuarioFK: int
 
 class Usuario(BaseModel):
     idUser: int
     nombre: str
     correo: str
     contrasena: str
-    ticketFK: int
-    empresaFK: int
