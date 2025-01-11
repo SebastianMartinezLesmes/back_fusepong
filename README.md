@@ -103,5 +103,9 @@ back_fusepong/
 ├── main.py                       # Punto de entrada principal de la aplicación
 ├── README.md                     # Documentación del proyecto
 
-7. El repositorio del frontend del proyecto está disponible en el siguiente enlace: [Front](https://github.com/SebastianMartinezLesmes/front_fusepong)
+## Notas
+1. **Verificar el estado de la Base de Datos:**
+Antes de iniciar el backend, asegúrate de que la base de datos esté funcionando correctamente para evitar errores de conexión.
+2. **Repositorio del Frontend:**
+El repositorio del frontend del proyecto está disponible en el siguiente enlace: [Front](https://github.com/SebastianMartinezLesmes/front_fusepong)
 
