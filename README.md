@@ -84,3 +84,8 @@ set PYTHONDONTWRITEBYTECODE=1 && uvicorn main:app --reload
 
 - Documentación interactiva de la API está disponible en [http://localhost:8000/docs](http://localhost:8000/docs)
 
+## Notas
+1. **Verificar el estado de la Base de Datos:**
+Antes de iniciar el backend, asegúrate de que la base de datos esté funcionando correctamente para evitar errores de conexión.
+2. **Repositorio del Frontend:**
+El repositorio del frontend del proyecto está disponible en el siguiente enlace: [Front](https://github.com/SebastianMartinezLesmes/front_fusepong)
