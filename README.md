@@ -84,3 +84,24 @@ set PYTHONDONTWRITEBYTECODE=1 && uvicorn main:app --reload
 
 - Documentación interactiva de la API está disponible en [http://localhost:8000/docs](http://localhost:8000/docs)
 
+6. **Estructura**
+
+back_fusepong/
+├── .venv/                        # Entorno virtual
+├── config/                       # Configuraciones del proyecto
+│   └── cors.py                     # Configuración para el manejo de CORS
+├── model/                        # Modelos del proyecto
+│   ├── data/                       # Datos estáticos o ejemplos
+│   │   ├── fusepong.corporations.json  # Datos sobre corporaciones
+│   │   ├── fusepong.proyects.json      # Datos sobre proyectos
+│   │   ├── fusepong.tickets.json       # Datos sobre tickets
+│   │   └── fusepong.users.json         # Datos sobre usuarios
+│   └── model.py                    # Archivo que define modelos o estructuras de datos
+├── routes/                       # Rutas o endpoints de la API
+│   └── endpoints.py                # Archivo con las rutas de la aplicación
+├── .gitignore                    # Archivos y carpetas a ignorar por Git
+├── main.py                       # Punto de entrada principal de la aplicación
+├── README.md                     # Documentación del proyecto
+
+7. **[Front]**(https://github.com/SebastianMartinezLesmes/front_fusepong)
+
